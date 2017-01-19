@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>AngularJS Custom Modal Example & Tutorial</title>
+
+    <!-- application less -->
+    <link href="_content/modal.less" rel="stylesheet/less" type="text/css" />
+    <link href="_content/app.less" rel="stylesheet/less" type="text/css" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+</head>
+<body>
+    <!-- main app container -->
+    <div>
+        <nav>
+            <a href="#/">Home</a>
+            <a href="#/test-page">Test Page</a>
+        </nav>
+        <ui-view></ui-view>
+    </div>
+
+    <!-- credits -->
+    <div class="credits">
+        <p>
+            <a href="http://jasonwatmore.com/post/2016/07/13/AngularJS-Custom-Modal-Example-Tutorial.aspx" target="_top">AngularJS Custom Modal Example & Tutorial</a>
+        </p>
+        <p>
+            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        </p>
+    </div>
+
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- underscore -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <!-- angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+    <!-- app -->
+    <script src="app.js"></script>
+    <script src="home/index.controller.js"></script>
+    <script src="test-page/index.controller.js"></script>
+    <script src="_directives/modal.directive.js"></script>
+    <script src="_services/modal.service.js"></script>
+</body>
+</html>
